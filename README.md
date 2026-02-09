@@ -267,8 +267,6 @@ Las construcciones fundamentales de C tienen una traducción directa a bajo nive
 * `if` y `switch` se traducen en comparaciones y saltos
 * `switch` puede generar tablas de salto cuando el compilador optimiza
 
-Por esta razón, C es un lenguaje ideal para comprender código ensamblador y el comportamiento real de un programa.
-
 ---
 
 ## 10. Errores comunes
