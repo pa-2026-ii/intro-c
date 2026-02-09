@@ -1,4 +1,8 @@
 # Guía breve de programación en C
+*Prof. Jose Francisco Ruiz Muñoz*<br>
+*Programación Avanzada 2026-I*<br>
+*Universidad Nacional de Colombia - Sede de La Paz*<br>
+
 
 El lenguaje C es fundamental en el desarrollo de sistemas operativos, sistemas embebidos, compiladores y software de alto rendimiento. Su estudio permite entender cómo se implementan las abstracciones de los lenguajes modernos y cómo interactúan los programas con el hardware.
 
@@ -281,3 +285,4 @@ La tarea de este tema se encuentra en el archivo [TAREA.md](TAREA.md).
 
 ---
 
+**Este repositorio fue desarrollado con apoyo de inteligencia artificial. El contenido fue revisado, validado y editado cuidadosamente por el docente responsable.*
