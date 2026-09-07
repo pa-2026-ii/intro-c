@@ -1,6 +1,6 @@
 # Guía breve de programación en C
 *Prof. Jose Francisco Ruiz Muñoz*<br>
-*Programación Avanzada 2026-I*<br>
+*Programación Avanzada 2026-II*<br>
 *Universidad Nacional de Colombia - Sede de La Paz*<br>
 
 
