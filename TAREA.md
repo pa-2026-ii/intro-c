@@ -8,10 +8,6 @@ Afianzar la comprensión de los **conceptos fundamentales del lenguaje C** y su 
 
 ## Instrucciones de entrega
 
-La solución de los ejercicios debe presentarse en formato de diapositivas.
-
-Las diapositivas deben:
-
 * Incluir explicaciones claras y concisas de cada ejercicio.
 
 * Incorporar recursos gráficos adecuados (diagramas, esquemas, fragmentos de código comentados) que faciliten la comprensión de los conceptos desarrollados.
