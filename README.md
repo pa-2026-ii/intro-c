@@ -105,6 +105,44 @@ Todo ciclo puede expresarse como:
 
 ---
 
+### 3.3 Ciclo `while`
+
+El ciclo `while` ejecuta un bloque de instrucciones **mientras** la condición evaluada sea verdadera. A diferencia del `for`, no agrupa inicialización, condición y actualización en una sola línea, por lo que resulta útil cuando el número de iteraciones no se conoce de antemano.
+
+```c
+int i = 0;
+while (i < 5) {
+    suma += i;
+    i++;
+}
+```
+
+* La condición se evalúa **antes** de cada iteración
+* Si la condición es falsa desde el inicio, el bloque no se ejecuta ninguna vez
+* El programador debe actualizar dentro del cuerpo del ciclo las variables que afectan la condición
+* Si la condición nunca se vuelve falsa, se produce un **ciclo infinito**
+
+---
+
+### 3.4 Ciclo `do-while`
+
+El ciclo `do-while` ejecuta el bloque de instrucciones y **luego** evalúa la condición. Esto garantiza que el cuerpo del ciclo se ejecute **al menos una vez**, sin importar el valor inicial de la condición.
+
+```c
+int i = 0;
+do {
+    suma += i;
+    i++;
+} while (i < 5);
+```
+
+* La condición se evalúa **después** de cada iteración
+* El bloque siempre se ejecuta al menos una vez
+* Es útil cuando una acción debe realizarse antes de poder verificar la condición (por ejemplo, validar una entrada del usuario)
+* Nótese el `;` obligatorio al final de la línea `while (...)`
+
+---
+
 ## 4. Estructura de selección `switch`
 
 La estructura `switch` permite seleccionar una rama de ejecución a partir del valor de una expresión entera o equivalente. Es especialmente útil cuando existen múltiples alternativas discretas.

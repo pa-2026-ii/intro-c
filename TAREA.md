@@ -19,24 +19,7 @@ Afianzar la comprensión de los **conceptos fundamentales del lenguaje C** y su 
 
 ---
 
-## Ejercicio 1 — Conceptos fundamentales (teórico)
-
-Explique con sus propias palabras los siguientes conceptos, en el contexto del lenguaje C:
-
-* Lenguaje **compilado**
-* Lenguaje **imperativo**
-* Lenguaje **de tipado estático**
-* Lenguaje **de bajo nivel relativo**
-
-Para cada concepto:
-
-1. Dé una definición clara.
-2. Explique cómo se manifiesta específicamente en C.
-3. Mencione una consecuencia práctica para el programador.
-
----
-
-## Ejercicio 2 — Variables y operaciones básicas
+## Ejercicio 1
 
 Escriba un programa que:
 
@@ -51,7 +34,7 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 3 — Uso de `if / else`
+## Ejercicio 2
 
 Escriba un programa que:
 
@@ -61,7 +44,7 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 4 — Uso de `switch`
+## Ejercicio 3
 
 Escriba un programa que:
 
@@ -71,7 +54,7 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 5 — Ciclos y acumuladores
+## Ejercicio 4
 
 Escriba un programa que:
 
@@ -81,31 +64,40 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 6 — Arreglos
+## Ejercicio 5
 
 Escriba un programa que:
 
-1. Declare un arreglo de 10 enteros.
-2. Lea los valores desde la entrada estándar.
-3. Calcule y muestre:
-
-   * El valor máximo
-   * El valor mínimo
-   * El promedio
+1. Use un ciclo `while` para leer números enteros ingresados por el usuario, uno por uno.
+2. Detenga la lectura cuando el usuario ingrese el valor centinela `-1`.
+3. Calcule y muestre la suma de todos los números leídos (sin contar el centinela).
+4. Explique, en un comentario, por qué esta lógica no podría implementarse fácilmente con un ciclo `for`.
 
 ---
 
-## Ejercicio 7 — Arreglos y ciclos
+## Ejercicio 6
 
 Escriba un programa que:
 
-1. Declare un arreglo de `N` enteros (con `N` definido como constante).
-2. Invierta el contenido del arreglo en el mismo arreglo.
-3. Imprima el arreglo antes y después de la inversión.
+1. Use un ciclo `do-while` para solicitar al usuario un número entero entre 1 y 10.
+2. Repita la solicitud mientras el valor ingresado esté fuera de ese rango.
+3. Imprima el número una vez que sea válido.
+4. Justifique, en un comentario, por qué en este caso es apropiado usar `do-while` en lugar de `while`.
 
 ---
 
-## Ejercicio 8 — Apuntadores básicos
+## Ejercicio 7
+
+Escriba un programa que:
+
+1. Declare un arreglo de `N` enteros (con `N` definido como constante) y lea sus valores desde la entrada estándar.
+2. Calcule y muestre el valor máximo, el valor mínimo y el promedio.
+3. Invierta el contenido del arreglo en el mismo arreglo, utilizando un ciclo `while`.
+4. Imprima el arreglo antes y después de la inversión.
+
+---
+
+## Ejercicio 8
 
 Escriba un programa que:
 
@@ -116,7 +108,7 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 9 — Apuntadores y arreglos
+## Ejercicio 9
 
 Escriba un programa que:
 
@@ -127,7 +119,7 @@ Escriba un programa que:
 
 ---
 
-## Ejercicio 10 — Funciones y `return`
+## Ejercicio 10
 
 Escriba un programa que:
 
