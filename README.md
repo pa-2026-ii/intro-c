@@ -280,7 +280,45 @@ void validar(int x) {
 
 ---
 
-### 8.3 `return` en la función `main`
+### 8.3 Funciones con apuntadores
+
+En C, los argumentos se pasan **por valor**: la función recibe una copia y no puede modificar la variable original del llamador. Cuando una función necesita modificar directamente una variable externa, se le pasa un **apuntador** a esa variable en lugar del valor. Esto es válido para funciones de cualquier tipo de retorno, pero es especialmente frecuente en funciones `void`, ya que estas no tienen otra forma de comunicar un resultado al llamador. Por eso los ejemplos de esta sección usan `void`.
+
+```c
+void incrementar(int *p) {
+    *p = *p + 1;
+}
+
+int main(void) {
+    int x = 5;
+    incrementar(&x);   /* x ahora vale 6 */
+    return 0;
+}
+```
+
+* `&x` pasa la dirección de `x`, no su valor
+* Dentro de la función, `*p` desreferencia el apuntador para acceder y modificar el valor original
+* Como la función no necesita devolver nada mediante `return`, se declara `void`; el "resultado" se comunica a través del apuntador
+
+Este patrón es la forma en que C simula el **paso por referencia** y es muy común para:
+
+* Modificar varias variables desde una sola función (ya que `return` solo permite devolver un valor)
+* Funciones que operan sobre arreglos o estructuras grandes sin copiarlas
+* Funciones de la biblioteca estándar como `scanf`, que reciben apuntadores para escribir el valor leído en la variable del llamador
+
+```c
+void intercambiar(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+```
+
+En este ejemplo, `intercambiar` no podría modificar las variables originales si `a` y `b` fueran `int` en lugar de `int *`.
+
+---
+
+### 8.4 `return` en la función `main`
 
 La función `main` devuelve un entero que indica el estado de terminación del programa.
 
