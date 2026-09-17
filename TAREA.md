@@ -14,9 +14,6 @@ Afianzar la comprensión de los **conceptos fundamentales del lenguaje C** y su 
 
 * Presentar el código fuente de manera legible, destacando las partes relevantes para la explicación.
 
-* Mantener una estructura ordenada y coherente entre las diferentes secciones.
-
-
 ---
 
 ## Ejercicio 1
